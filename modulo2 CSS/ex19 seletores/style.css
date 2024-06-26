@@ -1,0 +1,33 @@
+ @charset "UTF-8";
+  body{
+    background-image: linear-gradient(to right, #5dc45d8f, #a5a53093);
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 30px;
+    text-align: justify;
+  }
+  h1{
+    color: rgb(61, 97, 8);
+
+  }
+  h2{
+    color: rgb(44, 80, 44);
+  }
+  /* Tudo que é id em HTML é identificado com (#) em CSS
+  - Tudo que é class em HTML é identificado como (.) em CSS */
+
+  h1#principal{ 
+    text-align: center;
+    background-color:rgb(61, 97, 8);
+    color: white;
+    border-radius: 1em;
+    
+  }
+  .avançado{
+    color: rgb(165, 87, 42);
+  }
+  .basico{
+    color: rgb(255, 200, 47);
+  }
+  .intermediario{
+    color: rgb(205, 43, 226);
+  }

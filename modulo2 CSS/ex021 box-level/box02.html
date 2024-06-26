@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Gruping Tags</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body{
+            background-color: darkgrey;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+
+        }
+        div#bola{
+            border-radius: 50px;
+            background-color: aqua;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+        h1{
+            box-shadow: 2px 4px 5px 0px rgba(10, 10, 14, 0.267);
+        }
+        nav{
+            background-color:rgb(141, 138, 138) ;
+            padding: 3px;
+            box-shadow: 2px 4px 5px 0px rgb(10, 10, 14);
+           
+        }
+        nav > a{
+            color: white;
+            font-weight: bold;
+            margin: 30px;
+            text-decoration: none;
+            
+
+        }
+        nav >a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 6px 0px 6px 0px;
+        }
+        article{
+            background-color: lightgray;
+            
+        }
+        article > aside{
+            background-color: lightslategray;
+
+        }
+        footer{
+            background-color: black;
+            text-align: center;
+            color: white;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Preparacao para a criacao do meu primeiro site.</p>
+        </section>
+        <section id="noticias"> 
+            <article>
+            <h2>Noticias sobre Angola</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consequatur dignissimos officia facere sequi, ex doloribus amet illum molestias dolores nam velit vero at, ducimus nesciunt commodi iure aliquam quos.</p>
+            <aside>
+                <p>Artigo escrito por Joao Pedro</p>
+            </aside>
+        </article> 
+        </section>
+        
+
+    </main>
+    <footer>
+        <p>Desenvolvido pelo curso em video</p>
+
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

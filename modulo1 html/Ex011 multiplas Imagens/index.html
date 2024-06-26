@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir este site em varios dispositivos deferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+      <source media="(max-width: 900px )" srcset="imagens/P.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/M.png" type="image/png">
+       <img src="imagens/Grande.png" alt="imagem flexivel">
+    </picture>
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a reprozir audio em HTML5</p>
+    <audio src="midia/sjjc_T_017.mp3"controls autoplay loop>
+        <source src="midia/sjjc_T_017.mp3" type="audio/mpeg">
+        <source src="midia/sjjc_T_017.mp3" type="audio/ogg">
+        <source src="midia/sjjc_T_017.mp3" type="audio/wav">
+
+    </audio>
+    <audio src="midia/sjjc_T_118.mp3"controls autoplay></audio>
+
+</body>
+</html>
