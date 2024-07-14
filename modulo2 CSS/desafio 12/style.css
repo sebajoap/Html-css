@@ -47,10 +47,11 @@ section{
     line-height: 1.5em;
     font-family: var(--font3);
     font-size: 3vw;
-    
-
 }
-section.normal{
+section p {
+    padding-bottom: 2em;
+}
+section {
     background-color: white;
 }
 section.imagem{
@@ -61,7 +62,9 @@ section.imagem p{
     background-color: rgba(0, 0, 0, 0.253);
     display: inline-block;
     padding: 5px;
-
+}
+section#img01{
+    background-image: url();
 }
 
 footer{
