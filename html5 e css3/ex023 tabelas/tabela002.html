@@ -9,10 +9,26 @@
             font-family: Arial, Helvetica, sans-serif;
 
         }
+        
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+
+        }
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative; /*para nanter frezer o cabecalho*/
 
+        }
+        /* efeito zebrado*/
+        tbody > tr:nth-child(odd){/* ou 2n-1*/
+            background-color: rgba(211, 211, 211, 0.247);
+        }
+        tbody > tr:nth-child(even){/* ou 2n*/
+            background-color: white;
         }
         td, th{
             border: 1px solid black;
@@ -22,6 +38,11 @@
         thead, tfoot{
             background-color: grey;
             color: white;
+        }
+        thead >tr > th {/*para manter o cabelcalho preso */
+            position: sticky;
+            top: -1px;
+            background-color: grey;
         }
         td.num{
             text-align: right;
@@ -50,9 +71,9 @@
             <caption>População das Uindades Federativas</caption>
             <thead>
                 <tr>
-                    <th>Posição</th>
-                    <th>Estado</th>
-                    <th>População</th>
+                    <th scope="col" style="width: 90px;">Posição</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">População</th>
                 </tr>
 
             </thead>
@@ -201,7 +222,7 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <td>Total de Habitantes</td>
+                    <th>Total de Habitantes</th>
                     <td></td>
                     <td class="num">00000</td>
                 </tr>
